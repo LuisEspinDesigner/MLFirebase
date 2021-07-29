@@ -95,7 +95,7 @@ public class TextDetection extends AppCompatActivity {
             public void run() {
                 BitmapDrawable drawable = (BitmapDrawable) imagen.getDrawable();
                 Bitmap bitmap = drawable.getBitmap();
-                bitmap = scaleBitmapDown(bitmap, 1200);
+                bitmap = scaleBitmapDown(bitmap, 1000);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream(); //2da de la api
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 90, stream);
                 byte[] imageInByte = stream.toByteArray();

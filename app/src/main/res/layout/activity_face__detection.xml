@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
-    tools:context=".TextDetection">
+    tools:context=".face_Detection">
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Deteccion de Texto"
+        android:text="Deteccion de Rostros"
         android:textSize="30dp"
         android:textAlignment="center"/>
     <LinearLayout
@@ -18,12 +18,13 @@
         android:orientation="vertical"
         android:padding="40dp">
 
+
+
         <ImageView
             android:id="@+id/Imagen"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="#D6D6D6"
-            />
+            android:background="#D6D6D6" />
 
         <LinearLayout
             android:id="@+id/lybotones"
@@ -37,7 +38,7 @@
                 android:id="@+id/btncarga"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="Cargar Imagen"/>
+                android:text="Cargar Imagen" />
 
             <Button
                 android:id="@+id/btnprocesa"
@@ -50,22 +51,22 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Resultado"
-            android:textSize="20dp"
-            android:padding="10dp"/>
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/editTextTextMultiLine"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:ems="10"
-            android:scrollbars="vertical"
-            android:verticalScrollbarPosition="right"
             android:gravity="start|top"
             android:inputType="textMultiLine"
+            android:scrollbars="vertical"
             android:text="Aqui se muestra el resultado"
             android:textColor="@color/Red"
             android:textSize="20dp"
-            />
+            android:verticalScrollbarPosition="right" />
     </LinearLayout>
+
 </RelativeLayout>

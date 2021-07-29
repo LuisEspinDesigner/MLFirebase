@@ -25,5 +25,12 @@ public class MainActivity extends AppCompatActivity {
                                 }
 
         );
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent faceImagen = new Intent(v.getContext(),face_Detection.class);
+                startActivity(faceImagen);
+            }
+        });
     }
 }
